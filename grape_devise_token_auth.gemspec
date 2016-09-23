@@ -16,8 +16,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.8"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler", "> 1.8"
+  spec.add_development_dependency "rake", "> 10.0"
   spec.add_dependency 'grape', '> 0.9.0'
   spec.add_dependency 'devise', '~> 3.3'
   spec.add_dependency 'devise_token_auth', '~> 0.1.32.beta9'
